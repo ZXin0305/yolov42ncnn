@@ -1,0 +1,4 @@
+<launch>
+   <node pkg="yolo_object" type="yolo_ros" name="yolo_ros" output="screen" />
+   <!-- <node pkg="kinect2_viewer" type="yolo_2to3" name="yolo_2to3" output="screen" /> -->
+</launch>

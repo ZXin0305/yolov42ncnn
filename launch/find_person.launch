@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find usb_cam)/launch/usb_cam-test.launch" />
+
+    <node pkg = "ncnn_ros_cwb" type="Main_Detector" name ="main_detector" output="screen"/>
+    <node pkg = "yolo_object" type = "bind_person" name = "bind_person" output = "screen" />
+    <node pkg = "yolo_object" type = "find_person" name = "find_person" output = "screen" />
+
+</launch>
